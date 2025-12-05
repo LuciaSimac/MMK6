@@ -32,7 +32,6 @@
       width:100%;
     }
 
-    /* Header */
     header{
       display:flex;
       align-items:center;
@@ -63,7 +62,7 @@
       box-shadow:0 10px 30px rgba(0,0,0,0.08);
     }
 
-    /* NOVA GALERIJA */
+ 
     .galerija{
       margin-top:20px;
       display:grid;
@@ -85,7 +84,7 @@
       box-shadow:0 20px 40px rgba(0,0,0,0.2);
     }
 
-    /* EMBED */
+ 
     .embed{
       margin-top:12px;
       border-radius:10px;
@@ -102,7 +101,7 @@
       color:var(--muted);
     }
 
-    /* RESPONSIVE */
+ 
     @media(max-width:900px){
       .content{ grid-template-columns:1fr; }
       .galerija{ grid-template-columns:repeat(2,1fr); }
@@ -118,7 +117,6 @@
 <body>
 <div class="wrap">
 
-  <!-- HEADER -->
   <header>
     <div class="logo">RK</div>
     <div>
@@ -129,7 +127,7 @@
 
   <div class="content">
 
-    <!-- MAIN -->
+  
     <main>
 
       <h2>O umjetnici</h2>
@@ -140,7 +138,6 @@
 
       <h2 style="margin-top:20px;">Mala galerija</h2>
 
-      <!-- TVOJA GALERIJA -->
       <div class="galerija">
         <img src="images/slika1.jpg" alt="">
         <img src="images/slika2.jpg" alt="">
@@ -156,13 +153,13 @@
 
     </main>
 
-    <!-- ASIDE -->
+  
     <aside>
       <div class="meta">
         <h2>Video: Rinko Kawauchi</h2>
         <p>Visual Poetry Workshop with Rinko Kawauchi:</p>
 
-        <!-- YouTube video -->
+       
         <div class="embed">
 <iframe
   src="https://player.vimeo.com/video/21198482"
@@ -176,10 +173,10 @@
 
        <h3 style="margin-top:20px;">RINKO KAWAUCHI interview with CHRIS VIDAL TENOMAA</h3>
 
-<!-- Ugradnja PDF-a za pregled u stranici -->
+
 <div class="embed">
   <object data="2010_RK-SSAW-SS.pdf" type="application/pdf">
-    <!-- fallback: preglednik ne podržava PDF -->
+   
     <p style="padding:10px; color:#666;">
       Vaš preglednik ne može prikazati PDF.  
       <a href="2010_RK-SSAW-SS.pdf" download>Preuzmi PDF</a>
@@ -187,7 +184,7 @@
   </object>
 </div>
 
-<!-- dodatni jasan link za download -->
+
 <p style="margin-top:8px;">
   <a href="2010_RK-SSAW-SS.pdf" download>Preuzmi RINKO KAWAUCHI interview</a>
 </p>
@@ -209,4 +206,5 @@
 </p>
 
 </body>
+
 </html>

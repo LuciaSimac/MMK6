@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Rinko Kawauchi – Galerija</title>
+
+  <style>
+    :root{
+      --bg: #f6f6f7;
+      --card: #ffffff;
+      --text: #222;
+      --muted: #666;
+      --max-width: 1100px;
+    }
+
+    *{ box-sizing: border-box; }
+
+    body{
+      margin:0;
+      background: linear-gradient(180deg, var(--bg), #fff);
+      font-family: Arial, sans-serif;
+      padding:40px 20px;
+      display:flex;
+      justify-content:center;
+      color:var(--text);
+    }
+
+    .wrap{
+      max-width:var(--max-width);
+      width:100%;
+    }
+
+    /* Header */
+    header{
+      display:flex;
+      align-items:center;
+      gap:15px;
+      margin-bottom:30px;
+    }
+    .logo{
+      width:55px;height:55px;
+      background:#fff;
+      border-radius:10px;
+      display:flex;align-items:center;justify-content:center;
+      font-weight:bold;color:#b44a6c;
+      box-shadow:0 4px 10px rgba(0,0,0,0.15);
+      font-size:1.2rem;
+    }
+    h1{ margin:0; font-size:1.4rem; }
+
+    .content{
+      display:grid;
+      grid-template-columns:1fr 350px;
+      gap:30px;
+    }
+
+    main, .meta{
+      background:var(--card);
+      padding:20px;
+      border-radius:12px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    /* NOVA GALERIJA */
+    .galerija{
+      margin-top:20px;
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:16px;
+    }
+
+    .galerija img{
+      width:100%;
+      height:230px;
+      object-fit:cover;
+      border-radius:10px;
+      transition:transform 0.45s, box-shadow 0.45s;
+      cursor:pointer;
+    }
+
+    .galerija img:hover{
+      transform:scale(1.08) translateY(-6px);
+      box-shadow:0 20px 40px rgba(0,0,0,0.2);
+    }
+
+    /* EMBED */
+    .embed{
+      margin-top:12px;
+      border-radius:10px;
+      overflow:hidden;
+      border:1px solid #eee;
+    }
+    .embed iframe, .embed object{
+      width:100%;height:220px;border:0;
+    }
+
+    footer{
+      margin-top:20px;
+      text-align:center;
+      color:var(--muted);
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:900px){
+      .content{ grid-template-columns:1fr; }
+      .galerija{ grid-template-columns:repeat(2,1fr); }
+    }
+    @media(max-width:550px){
+      .galerija{ grid-template-columns:1fr; }
+      .galerija img{ height:180px; }
+    }
+
+  </style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">RK</div>
+    <div>
+      <h1>Rinko Kawauchi — Poetske fotografije</h1>
+      <p style="color:var(--muted); margin:0;">Umjetnost svjetlosti i svakodnevnih trenutaka.</p>
+    </div>
+  </header>
+
+  <div class="content">
+
+    <!-- MAIN -->
+    <main>
+
+      <h2>O umjetnici</h2>
+      <p style="color:var(--muted);">
+        Rinko Kawauchi japanska je fotografkinja poznata po poetskim prikazima svakodnevice.
+        Njeni radovi naglašavaju male, prolazne, tihe trenutke.
+      </p>
+
+      <h2 style="margin-top:20px;">Mala galerija</h2>
+
+      <!-- TVOJA GALERIJA -->
+      <div class="galerija">
+        <img src="images/slika1.jpg" alt="">
+        <img src="images/slika2.jpg" alt="">
+        <img src="images/slika3.jpg" alt="">
+        <img src="images/slika4.jpg" alt="">
+        <img src="images/slika5.jpg" alt="">
+        <img src="images/slika6.jpg" alt="">
+      </div>
+
+      <footer>
+        <small>Ovo je edukativni projekt. Slike se učitavaju s tvog računala.</small>
+      </footer>
+
+    </main>
+
+    <!-- ASIDE -->
+    <aside>
+      <div class="meta">
+        <h2>Video: Rinko Kawauchi</h2>
+        <p>Visual Poetry Workshop with Rinko Kawauchi:</p>
+
+        <!-- YouTube video -->
+        <div class="embed">
+<iframe
+  src="https://player.vimeo.com/video/21198482"
+  width="640" height="360"
+  frameborder="0"
+  allow="autoplay; fullscreen; encrypted‑media"
+  allowfullscreen>
+</iframe>
+
+
+
+       <h3 style="margin-top:20px;">RINKO KAWAUCHI interview with CHRIS VIDAL TENOMAA</h3>
+
+<!-- Ugradnja PDF-a za pregled u stranici -->
+<div class="embed">
+  <object data="2010_RK-SSAW-SS.pdf" type="application/pdf">
+    <!-- fallback: preglednik ne podržava PDF -->
+    <p style="padding:10px; color:#666;">
+      Vaš preglednik ne može prikazati PDF.  
+      <a href="2010_RK-SSAW-SS.pdf" download>Preuzmi PDF</a>
+    </p>
+  </object>
+</div>
+
+<!-- dodatni jasan link za download -->
+<p style="margin-top:8px;">
+  <a href="2010_RK-SSAW-SS.pdf" download>Preuzmi RINKO KAWAUCHI interview</a>
+</p>
+
+
+      </div>
+    </aside>
+
+  </div>
+
+</div>
+</body>
+</html>
+
+
+
+<p style="text-align: center; margin-top: 40px;">
+<em>Lucia Šimac</em>
+</p>
+
+</body>
+</html>
